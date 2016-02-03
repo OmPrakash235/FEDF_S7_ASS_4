@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Mouse Coordinates</title>
+		
+	</head>
+	<body>
+		<textarea id="textBox" cols="125" rows="10" onmouseover="mouseCoordinate(event)"></textarea>
+	</body>
+	<script>
+		function mouseCoordinate(e){
+			document.getElementById('textBox').value += 'X: ' + e.clientX + '; Y: ' + e.clientY + '; Time: ' + Date() + '\n';
+		}
+	</script>
+</html>
